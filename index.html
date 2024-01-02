@@ -1,201 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Portfólio | Raí Lopes - Desenvolvedor Front-End</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="script.js"></script>
-</head>
-<body>
-    
-    <!--====================================================================================================== 
+  </head>
+  <body>
+    <main>
+      <!--====================================================================================================== 
     HEADER 
     =======================================================================================================-->
 
-    <header id="header">
+      <header id="header" class="header">
         <div class="container">
-          <div class="flex">
-            <h1 id="logo">RLM</h1> 
-            <nav id="nav">
-              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <div class="header__content">
+            <h1 class="header__logo">RLM</h1>
+            <nav id="nav-menu">
+              <button
+                aria-label="Abrir Menu"
+                id="btn-mobile"
+                aria-haspopup="true"
+                aria-controls="menu"
+                aria-expanded="false"
+              >
                 <span id="hamburger"></span>
               </button>
               <ul id="menu" role="menu">
                 <h2>Prazer em conhece-lo! :)</h2>
-                <li><a href="">HOME</a></li>
-                <li><a href="#div2_introducao_secundaria">SOBRE</a></li>
-                <li><a href="#section2_projetos">PROJETOS</a></li>
-                <li><a href="#section_contantos">CONTATO</a></li>
+                <li><a class="header__link" href="">HOME</a></li>
+                <li>
+                  <a class="header__link" href="#div2_introducao_secundaria"
+                    >SOBRE</a
+                  >
+                </li>
+                <li>
+                  <a class="header__link" href="#section2_projetos">PROJETOS</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#section_contantos">CONTATOS</a>
+                </li>
               </ul>
             </nav>
           </div>
         </div>
-    </header>
+      </header>
 
-    <!--========================================================================================================= 
+      <!--========================================================================================================= 
     CONTANT 
     ==========================================================================================================-->
 
-    <main>
+      <!---------------------------- Section1-Introduçao ---------------------------->
 
-    <!---------------------------- Section1-Introduçao ---------------------------->
-
-        <section id="section1_introducao">
-            <div id="div_introducao_secundaria">
-                <div id="div1_introducao">
-                    <h1 id="p1_introducao">SEJA BEM-VINDO!</h1>
-                    <p id="p2_introducao">Eu sou Rai Lopes :)</p>
-                    <p id="p3_introducao">Desenvolvedor Front-End.</p>
-                </div>
-
-                <div id="div2_introducao">
-                    <img src="img/eu.jpg" alt="minha foto">
-                </div>
-
+      <section id="section1_introducao">
+        <div class="container">
+          <div id="div_introducao_secundaria">
+            <div id="div1_introducao">
+              <h1 id="p1_introducao">SEJA BEM-VINDO!</h1>
+              <p id="p2_introducao">Eu sou Rai Lopes :)</p>
+              <p id="p3_introducao">Desenvolvedor Front-End.</p>
             </div>
 
-            <div id="div2_introducao_secundaria">
-                <h2 id="h2-1_introducao">Sobre mim</h2>
-                <p id="p5_introducao">
-                    Sou um jovem de 19 anos aprendendo o vasto mundo que é o desenvolvimento front-end.
-                    Além disso, busco sempre me aprimorar e divirtir muito durante meu aprendizado.
-                    Moro em Fortaleza-CE e este é meu Portfólio oficial.
-                    Alguns projetos desenvolvidos por mim e que participei estão aqui.
+            <div id="div2_introducao">
+              <img src="img/eu.jpeg" alt="minha foto" />
+            </div>
+          </div>
+
+          <div id="div2_introducao_secundaria">
+            <h2 id="h2-1_introducao">Sobre mim</h2>
+            <p id="p5_introducao">
+              Sou um jovem de 19 anos aprendendo o vasto mundo que é o
+              desenvolvimento front-end. Além disso, busco sempre me aprimorar e
+              divirtir muito durante meu aprendizado. Moro em Fortaleza-CE e
+              este é meu Portfólio oficial. Alguns projetos desenvolvidos por
+              mim e que participei estão aqui.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------- Section2-Projetos --------------------------->
+
+      <section id="section2_projetos">
+        <div class="container">
+          <h2 id="h2_projetos">Estes são alguns projetos realizados</h2>
+          <div id="div_projetos">
+            <!-- projeto-1 -->
+            <div class="cards">
+              <img class="card-img" src="img/syscad.png" alt="syscad" />
+              <div class="descricao">
+                <nav class="card-linguagem">
+                  <img class="linguagem-img" src="img/html5.png" />
+                  <img class="linguagem-img" src="img/css3.png" />
+                  <img class="linguagem-img" src="img/javascript.png" />
+                </nav>
+                <h3>Website | Syscad - tela de usuário</h3>
+                <p>
+                  Projeto criado para um trabalho escolar. Tela de Usúario
+                  responsiva com formulário, com o intuito de treinar a parte do
+                  front-end.
                 </p>
+                <a
+                  class="card-link"
+                  href="https://railopes04.github.io/Syscad/"
+                  target="_blank"
+                  >Visitar
+                </a>
+              </div>
             </div>
-        </section>
 
-        <!-------------------------- Section2-Projetos --------------------------->
-
-        <section id="section2_projetos">
-            <h2 id="h2_projetos">Estes são alguns projetos realizados</h2>
-            <div id="div_projetos">
-
-                <!-- projeto-1 -->
-                <div class="card">
-                    <img class="card-img" src="./img/syscad.png" alt="syscad">
-                    <div class="descricao">
-                        <nav class="card-linguagem">
-                            <img class="linguagem-img" src="img/html5.png">
-                            <img class="linguagem-img" src="img/css3.png">
-                            <img class="linguagem-img" src="img/javascript.png">
-                        </nav>
-                      <h3>Website | Syscad - tela de usuário</h3>
-                      <p>
-                        Projeto criado para um trabalho escolar.
-                        Tela de Usúario responsiva com formulário,
-                        com o intuito de treinar a parte do front-end.
-                      </p>
-                    </div>
-                    <div class="buttom">
-                        <nav class="nav_buttonprojetos">
-                            <a href="https://railopes04.github.io/Syscad/" target="_blank">
-                                <img class="imgs_projetos" src="img/world.png" alt="world">
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- projeto-2 -->
-                <div class="card">
-                    <img class="card-img" src="./img/fortal-turismo.png" alt="fortal-turismo">
-                    <div class="descricao">
-                        <nav class="card-linguagem">
-                            <img class="linguagem-img" src="img/html5.png">
-                            <img class="linguagem-img" src="img/css3.png">
-                            <img class="linguagem-img" src="img/javascript.png">
-                        </nav>
-                      <h3>Website | Fortal Turismo</h3>
-                      <p> 
-                        Neste projeto desenvolvi uma página relacionada ao turismo sobre a cidade onde moro.
-                      </p>
-                    </div>
-                    <div class="buttom">
-                        <nav class="nav_buttonprojetos">
-                            <a href="https://railopes04.github.io/fortal-turismo/" target="_blank">
-                                <img class="imgs_projetos" src="img/world.png" alt="world">
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- projeto-3 -->
-                <div class="card">
-                    <img class="card-img" src="./img/jb.png" alt="jb">
-                    <div class="descricao">
-                        <nav class="card-linguagem">
-                            <img class="linguagem-img" src="img/html5.png">
-                            <img class="linguagem-img" src="img/css3.png">
-                            <img class="linguagem-img" src="img/javascript.png">
-                        </nav>
-                      <h3>Website | Projeto Social</h3>
-                      <p> 
-                        Neste projeto, faço parte da equipe de programação,
-                        que junto com outras equipes estar desenvolvedo
-                        o projeto social do site da escola José De Barcelos (em andamento).
-                      </p>
-                    </div>
-                    <div class="buttom">
-                        <nav class="nav_buttonprojetos">
-                            <a href="#em-andamento">
-                                <img class="imgs_projetos" src="img/world.png" alt="world">
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-      
+            <!-- projeto-2 -->
+            <div class="cards">
+              <img
+                class="card-img"
+                src="img/fortal-turismo.png"
+                alt="fortal-turismo"
+              />
+              <div class="descricao">
+                <nav class="card-linguagem">
+                  <img class="linguagem-img" src="img/html5.png" />
+                  <img class="linguagem-img" src="img/css3.png" />
+                  <img class="linguagem-img" src="img/javascript.png" />
+                </nav>
+                <h3>Website | Fortal Turismo</h3>
+                <p>
+                  Neste projeto desenvolvi uma página relacionada ao turismo
+                  sobre a cidade onde moro, onde mostra varios localidades turisticas e conhecidas.
+                </p>
+                <a
+                  class="card-link"
+                  href="https://railopes04.github.io/fortal-turismo/"
+                  target="_blank"
+                  >Visitar
+                </a>
+              </div>
             </div>
-        </section>
 
-        <!-------------------------- Section3-Contantos ---------------------------->
+            <!-- projeto-3 -->
+            <div class="cards">
+              <img class="card-img" src="img/jb.png" alt="jb" />
+              <div class="descricao">
+                <nav class="card-linguagem">
+                  <img class="linguagem-img" src="img/html5.png" />
+                  <img class="linguagem-img" src="img/css3.png" />
+                  <img class="linguagem-img" src="img/javascript.png" />
+                </nav>
+                <h3>Website | Projeto Social</h3>
+                <p>
+                  Neste projeto, faço parte da equipe de programação, que junto
+                  com outras equipes estar desenvolvedo o projeto social do site
+                  da escola José De Barcelos (em andamento).
+                </p>
+                <a class="card-link" href="#em-andamento">Visitar </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="section_contantos">
-            <h2 id="h2_contantos">Contatos</h2>
+      <!-------------------------- Section3-Contantos ---------------------------->
 
-            <div id="div_contantos">
-                <!-- <div class="div_contantos_secundario">
+      <section id="section_contantos">
+        <div class="container">
+          <h2 id="h2_contantos">Contatos</h2>
+
+          <div id="div_contantos">
+            <!-- <div class="div_contantos_secundario">
                     <a href="">
                         <img src="img/email.png">
                         <p class="p1_contantos">E-mail</p>
                         <p class="p2_contantos"></p>
                     </a>
-                </div> -->
-                <!-- <div class="div_contantos_secundario">
+                </div>
+                <div class="div_contantos_secundario">
                     <a href="">
                         <img src="img/telefone2.png">
                         <p class="p1_contantos">Telefone</p>
                         <p class="p2_contantos"></p>
                     </a>
                 </div> -->
-                <div class="div_contantos_secundario">
-                    <a href="https://github.com/railopes04" target="_blank">
-                        <img src="img/github.png">
-                        <p class="p1_contantos">GitHub</p>
-                        <p class="p2_contantos">@railopes04</p>
-                    </a>
-                </div>
-                <div class="div_contantos_secundario">
-                    <a href="https://www.linkedin.com/in/railopes04/" target="_blank">
-                        <img src="img/linkedin.png">
-                        <p class="p1_contantos">Linkedin</p>
-                        <p class="p2_contantos">www.linkedin.com/in/railopes04</p>
-                    </a>
-                </div>
-                
+            <div class="div_contantos_secundario">
+              <a href="https://github.com/railopes04" target="_blank">
+                <img src="img/github.png" />
+                <p class="p1_contantos">GitHub</p>
+                <p class="p2_contantos">@railopes04</p>
+              </a>
             </div>
-        </section>
+            <div class="div_contantos_secundario">
+              <a href="https://www.linkedin.com/in/railopes04/" target="_blank">
+                <img src="img/linkedin.png" />
+                <p class="p1_contantos">Linkedin</p>
+                <p class="p2_contantos">www.linkedin.com/in/railopes04</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!--========================================================================================================= 
+      <!--========================================================================================================= 
     FOOTER 
     ==========================================================================================================-->
-            
-        <footer>
-            <p>© Desenvolvido por Raí Lopes</p>
-        </footer>
 
+      <footer>
+        <p>© Desenvolvido por Raí Lopes</p>
+      </footer>
     </main>
     <!-- <script src="script.js"></script> -->
-</body>
+  </body>
 </html>
