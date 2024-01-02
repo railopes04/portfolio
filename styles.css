@@ -286,8 +286,8 @@ CONTANT
 #div2_introducao img {
   max-width: 100%;
   width: 18rem;
-  border: 0.188rem solid var(--backgroud-one);
-  border-radius: 0.188rem;
+  border-top: 0.188rem solid var(--backgroud-one);
+  border-radius: 0 0 2rem 2rem;
   object-fit: cover;
 }
 
