@@ -8,7 +8,7 @@ window.addEventListener("scroll", function(){
 
 //===============Script_do_botao===============//
 
-const nav = document.querySelector("#nav");
+const nav = document.querySelector("#nav-menu");
 const btnMenu = document.querySelector("#btn-mobile");
 const menu = document.querySelector("#menu");
 
