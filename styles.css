@@ -424,8 +424,9 @@ CONTANT
   border-radius: 5px;
   font-weight: 400;
   font-size: clamp(0.8rem, 7vw, 1.1rem);
+  border: 2px solid var(--backgroud-one) !important;
   &:hover {
-    background-color: var(--color-eleven);
+    background-color: transparent;
   }
 }
 
